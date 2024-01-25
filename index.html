@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="src/styles/style.css">
+
+    <title>Dice game</title>
+</head>
+
+<body>
+<div class="container">
+    <div class="player-board active">
+        <div class="player-name">Gamer 1</div>
+        <div class="player-score">0</div>
+        <div class="player-current-box">
+            <div class="player-current-box__label">Current</div>
+            <div class="player-current-box__score">0</div>
+        </div>
+    </div>
+
+    <div class="player-board">
+        <div class="player-name">Gamer 2</div>
+        <div class="player-score">0</div>
+        <div class="player-current-box">
+            <div class="player-current-box__label">Current</div>
+            <div class="player-current-box__score">0</div>
+        </div>
+    </div>
+
+    <div class="panel-controls">
+        <div class="panel-controls__item">
+            <div class="panel-controls__item-control">
+                <button class="btn" id="btnWinners">Get winners</button>
+            </div>
+            <div class="panel-controls__item-control">
+                <button class="btn" id="btnNewGame">New game</button>
+            </div>
+        </div>
+
+        <div class="panel-controls__dices">
+            <img src="src/images/dice-5.png" alt="Dice" class="dice">
+            <img src="src/images/dice-2.png" alt="Dice" class="dice">
+        </div>
+
+        <div class="panel-controls__item">
+            <div class="panel-controls__item-control">
+                <button class="btn" id="btnThrow"><i class="ion-ios-loop"></i>Throw</button>
+            </div>
+            <div class="panel-controls__item-control">
+                <button class="btn" id="btnSaveResult"><i class="ion-ios-download-outline"></i>Save result</button>
+            </div>
+            <div class="panel-controls__item-control">
+                <input id="limitInput" type="text" class="input" placeholder="Maximum points limit" value="100">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="src/index.js"></script>
+</body>
+</html>
